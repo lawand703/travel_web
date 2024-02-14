@@ -1,0 +1,157 @@
+﻿
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+    .logo img {
+        max-width: 150px; /* Maksimum genişlik */
+        height: auto; /* Otomatik yükseklik */
+        display: block; /* Inline elemanın arasına boşluk ekler */
+        margin-right: 20px; /* Logo ile diğer içerik arasına boşluk ekler */
+    }
+
+.header-content {
+    flex: 1;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            nav ul li a:hover {
+                color: #f7df1e;
+            }
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ana sayfa genel stil */
+
+
+/* Turlar bölümü özel stilleri */
+
+
+
+
+
+/* Company bölümü stilleri */
+
+/* Şirket listesi stil */
+
+
+
+/* İletişim formu stilleri */
+
+#iletisim {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f7df1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #333;
+    }
+
+.login-container {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+/* Style the login icon (you can replace this with an actual icon) */
+.log-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7df1e;
+    /* Diğer stiller veya pozisyon ayarları burada yapılabilir */
+}
+
+

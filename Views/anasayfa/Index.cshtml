@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/layout.cshtml";
+}
+<style>
+    #anasayfa {
+        height: 100vh;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        background-image: url('../../images/pexels-cliford-mervil-2398220.jpg'); /* Resim dosyasının yolu */
+        background-size: cover; /* Resmin boyutunu sayfaya göre otomatik ayarla */
+        background-position: center; /* Resmi sayfa içinde ortala */
+    }
+
+        /* Ana sayfa başlık stil */
+        #anasayfa h2 {
+            font-size: 2.5em;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Ana sayfa genel metin stil */
+
+        /* Hizmetler listesi stil */
+        #anasayfa ul {
+            list-style-type: none;
+            margin-left: 30px;
+            margin-bottom: 15px;
+            padding-left: 0; /* Listenin içindeki boşluğu sıfırla */
+            font-family: 'Pangea Display', Helvetica, Arial, sans-serif;
+        }
+
+            #anasayfa ul li {
+                position: relative;
+                font-size: 1.3em;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 15px; /* Her öğe arasındaki boşluğu artır */
+            }
+
+
+                #anasayfa ul li::before {
+                    content: "\2022"; /* Yuvarlak işaretin Unicode karşılığı */
+                    color: #f7df1e; /* Sarı renk */
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                    position: absolute;
+                    left: 0;
+                }
+
+        /* Koyu vurgulu çağrı stil */
+        #anasayfa strong {
+            color: rgba(0, 0, 0, 0.9);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+</style>
+
+<section id="anasayfa">
+    <h2>Hoş Geldin @HttpContext.Current.User.Identity.Name</h2>
+    <ul>
+        <li>Özel Turlar</li>
+        <li>Kültürel Geziler</li>
+        <li>Doğa Yürüyüşleri</li>
+        <li>Şehir Turları</li>
+    </ul>
+
+    <p><strong>Bizimle seyahat etmek için hemen bir tur seçin ve maceraya katılın!</strong></p>
+
+</section>
+<section id="iletisim">
+    <h2>İletişim</h2>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mesaj">Mesajınız:</label>
+            <textarea id="mesaj" name="mesaj" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Gönder</button>
+    </form>
+</section>-

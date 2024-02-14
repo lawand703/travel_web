@@ -1,0 +1,28 @@
+﻿@model WebApplication4.Models.departman
+@{
+    ViewBag.Title = "DepartmanForm";
+    Layout = "~/Views/shared/layout.cshtml";
+}
+
+<h2>DepartmanForm</h2>
+<div class="container">
+    <h2>Şirket Bilgi Formu</h2>
+    <form method="post" id="company-form">
+        <div class="form-group">
+            <label for="company-name">Şirket Adı</label>
+            <input type="text" id="company-name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="company-phone">Telefon Numarası</label>
+            <input type="tel" id="company-phone" ad="phone" required>
+            <span id="phone-error" style="color: red; display: none;">Telefon numarası 10 haneli olmalıdır!</span>
+        </div>
+        <div class="form-group">
+            <label for="company-address">Adres</label>
+            <textarea id="company-address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Bilgileri Gönder</button>
+        </div>
+    </form>
+</div>

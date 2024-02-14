@@ -1,0 +1,45 @@
+﻿@model WebApplication4.Models.admin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="~/Content/adminlogin.css" rel="stylesheet" />
+</head>
+<body>
+
+    <section class="wrapper">
+        <div class="form signup">
+            @ViewBag.Mesaj
+            @using (Html.BeginForm("Login", "Security", FormMethod.Post))
+            {
+                <header>login</header>
+
+                <form action="#">
+
+                   
+                    @Html.LabelFor(model => model.username)
+                    @Html.TextBoxFor(model => model.username, new { @class = "form-control", placeholder = "kullanci adı" })
+
+
+
+                        
+                    @Html.LabelFor(model => model.sifre)
+                    @Html.PasswordFor(model => model.sifre, new { @class = "form-control", placeholder = "sifre" })
+
+
+                <input type="submit" value="Signup" />
+                </form>
+            }
+        </div>
+    </section>
+</body>
+</html>

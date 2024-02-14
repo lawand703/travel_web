@@ -1,0 +1,205 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>travel page</title>
+    <meta name='discripion' content="this is travel page">
+
+    <link rel="stylesheet" href="../css/travel.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script rel="stylesheet" link="../Scipts/Layout.css"></script>
+
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            flex: 0 0 auto;
+        }
+
+            .logo img {
+                max-width: 150px; /* Maksimum genişlik */
+                height: auto; /* Otomatik yükseklik */
+                display: block; /* Inline elemanın arasına boşluk ekler */
+                margin-right: 20px; /* Logo ile diğer içerik arasına boşluk ekler */
+            }
+
+        .header-content {
+            flex: 1;
+        }
+
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                    nav ul li a:hover {
+                        color: #f7df1e;
+                    }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        #iletisim {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f7df1e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #333;
+            }
+
+        .login-container {
+            position: absolute;
+            top: 35px;
+            right: 20px;
+        }
+
+        .log-text {
+            font-size: 18px; /* Daha küçük bir font boyutu */
+            font-weight: bold;
+            color: #f7df1e; /* Mavi renk kullanımı */
+            text-decoration: none;
+            margin-right: 15px; /* Sağ kenardan 15 piksel boşluk */
+            transition: color 0.3s ease; /* Renk değişimine yumuşak bir geçiş ekleme */
+        }
+
+            .log-text:hover {
+                color: #2980b9; /* Hover durumunda renk değişimi */
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="login-container">
+
+            <a class="log-text" href="/anasayfa/Uyeol/">üye ol</a>
+
+            <a class="log-text" href="/anasayfa/Login/">giriş yap</a>
+
+        </div>
+
+        <div class="logo">
+            <img src="../../images/travel_logo1.png" alt="Seyahat Şirketi Logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href=" /anasayfa/Index/">anasayfa</a></li>
+                <li><a href=" /anasayfa/turlar/">Turlar</a></li>
+                <li><a href=" /Booking/">Randuvularım</a></li>
+                <!--<li><a href=" /anasayfa/sirketlera/">Şirketler</a></li>-->
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+    <div>
+        <h1>lütfen giriş yapınız</h1>
+    </div>
+
+</body>
+</html>

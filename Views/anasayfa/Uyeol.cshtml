@@ -1,0 +1,65 @@
+﻿@model WebApplication4.Models.user
+@{
+    ViewBag.Title = "login";
+    // Layout = "~/Views/shared/layout.cshtml";
+}
+
+<link href="~/Content/userlogin.css" rel="stylesheet" />
+
+
+<section class="wrapper">
+
+    
+    <div class="form signup">
+        @ViewBag.Mesaj
+        <h1> @ViewBag.Mesaj1</h1>
+        @using (Html.BeginForm("Uyeol", "anasayfa", FormMethod.Post))
+        {
+            <header>üye ol</header>
+
+            <form action="#">
+
+                @Html.LabelFor(model => model.fullname)
+                @Html.TextBoxFor(model => model.fullname, new { @class = "form-control", placeholder = "ad soyad" })
+
+                @Html.LabelFor(model => model.username)
+                @Html.TextBoxFor(model => model.username, new { @class = "form-control", placeholder = "kullanci adi" })
+
+
+                @Html.LabelFor(model => model.password)
+                @Html.TextBoxFor(model => model.password, new { @class = "form-control", placeholder = "şifre" })
+
+
+                @Html.LabelFor(model => model.age)
+                @Html.PasswordFor(model => model.age, new { @class = "form-control", placeholder = "yaş" })
+
+
+                @Html.LabelFor(model => model.email)
+                @Html.TextBoxFor(model => model.email, new { @class = "form-control", placeholder = "mail" })
+
+
+                @Html.LabelFor(model => model.phonenumber)
+                @Html.TextBoxFor(model => model.phonenumber, new { @class = "form-control", placeholder = "telefon numarısı" })
+
+                <button type="submit" >Kaydet</button>
+
+
+            </form>
+        }
+    </div>
+
+</section>
+
+@* <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+            <input type="text" placeholder="Full name" required />
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <div class="checkbox">
+                <input type="checkbox" id="signupCheck" />
+                <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" />
+        </form>
+    </div>*@

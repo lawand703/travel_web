@@ -1,0 +1,86 @@
+﻿
+@using WebApplication4.Models
+@model List<departman>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/layout.cshtml";
+}
+
+<style>
+    #sirketler {
+        height: 100vh;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .company-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .company-item {
+        background-image: url(../../images/HORIZONTAL.png);
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: white;
+    }
+
+    .company-list h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    .company-list p {
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .select-button {
+        padding: 8px 15px;
+        background-color: #f7df1e;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .select-button:hover {
+            background-color: #333;
+        }
+</style>
+
+<section id="sirketler">
+    <h2>Şirketler</h2>
+    
+    @foreach (var departmanim in Model)
+    {
+        <div class="company-list">
+            <div class="company-item">
+                <h3>@departmanim.ad</h3>
+                <h3>@departmanim.telefon</h3>
+                <p>@departmanim.konum</p>
+                <a class="select-button" href="">sec</a>
+
+            </div>
+        </div>
+    }
+
+
+
+    <!-- <div class="company-item_2">
+         <h3></h3>
+         <p>şirket bilgileri.</p>
+         <button class="select-button" data-company="company2">Seç</button>
+     </div>
+
+     <!-- Diğer şirketler buraya eklenebilir -->
+
+</section>

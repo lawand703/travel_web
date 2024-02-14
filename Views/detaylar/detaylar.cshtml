@@ -1,0 +1,52 @@
+﻿@model WebApplication4.Models.detaylar
+
+
+@*@using WebApplication4.Models
+    @model List<detaylar>*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details</title>
+    <link href="~/Content/detaylar.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <h1>Tur detayları</h1>
+    </header>
+    <h2 style="color:red;">@ViewBag.mesaj3</h2>
+    <main>
+        <section id="tour-details">
+
+            @if (Model != null)
+            {
+                // Sadece ilk detayı alıyoruz, istediğiniz indeksi kullanabilirsiniz.
+                <h2>@Model.ad</h2>
+                <p><strong>konum:</strong> @Model.konum</p>
+                <p><strong>tarih:</strong> @Model.tarih</p>
+                <p><strong>fiyat:</strong> @Model.fiyat </p>
+                <p>@Model.detay</p>
+                <!-- Add any other relevant details here -->
+            }
+            else
+            {
+                <p>Detay bulunamadı.</p>
+            }
+            <!-- Add any other relevant details here -->
+
+        </section>
+        <a href="/anasayfa/bookinkgsirketsecim/@Model.id" id="select-button">Seç</a>
+    </main>
+
+</body>
+</html>
+
+
+

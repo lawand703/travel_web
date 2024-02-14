@@ -1,0 +1,57 @@
+﻿@model WebApplication4.Models.user
+@{
+    ViewBag.Title = "login";
+    // Layout = "~/Views/shared/layout.cshtml";
+}
+
+<link href="~/Content/userlogin.css" rel="stylesheet" /> 
+
+<section class="wrapper">
+    <div class="login-container">
+
+        <a class="log-text" href="/Security/Login/">Admin</a>
+
+    </div>
+    <div class="form signup">
+
+
+        @ViewBag.Mesaj
+        @using (Html.BeginForm("Login", "anasayfa", FormMethod.Post))
+        {
+            <header>login</header>
+
+            <form action="#">
+
+
+                @Html.LabelFor(model => model.username)
+                @Html.TextBoxFor(model => model.username, new { @class = "form-control", placeholder = "kullanci adı" })
+
+
+
+
+                @Html.LabelFor(model => model.password)
+                @Html.PasswordFor(model => model.password, new { @class = "form-control", placeholder = "sifre" })
+
+
+                <input type="submit" value="Signup" />
+            </form>
+        }
+
+
+    </div>
+
+</section>
+
+@* <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+            <input type="text" placeholder="Full name" required />
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <div class="checkbox">
+                <input type="checkbox" id="signupCheck" />
+                <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" />
+        </form>
+    </div>*@
