@@ -4,10 +4,10 @@ Welcome to the Travel Website project! This website is designed to provide users
 
 ## Screenshots
 
-![Homepage](screenshots/Ekran görüntüsü 2024-04-28 233645.png)
+![Homepage](screenshots/homepage.png)
 *Homepage*
 
-![Tour Details](screenshots/tour_details.png)
+![Tour Details](screenshots/detail.png)
 *Tour Details Page*
 
 ## Features
