@@ -7,6 +7,9 @@ Welcome to the Travel Website project! This website is designed to provide users
 ![Homepage](screenshots/homepage.png)
 *Homepage*
 
+![Tours](screenshots/tours.png)
+*Tours*
+
 ![Tour Details](screenshots/detail.png)
 *Tour Details Page*
 
