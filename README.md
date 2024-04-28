@@ -2,6 +2,14 @@
 
 Welcome to the Travel Website project! This website is designed to provide users with a platform to explore various tours, view tour details such as price, location, and date, and manage their appointments with different tour companies. Users can also register, log in, and access admin functionalities.
 
+## Screenshots
+
+![Homepage](screenshots/Ekran görüntüsü 2024-04-28 233645.png)
+*Homepage*
+
+![Tour Details](screenshots/tour_details.png)
+*Tour Details Page*
+
 ## Features
 
 - **Tour Exploration**: Users can browse through a variety of tours available on the platform.
